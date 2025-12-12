@@ -1,0 +1,88 @@
+/* ---------------------------------------------------
+   GENERAL
+--------------------------------------------------- */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #f2f4f5;
+    color: #222;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+/* ---------------------------------------------------
+   HEADER
+--------------------------------------------------- */
+.site-header {
+    background: #0c8f4a;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* ---------------------------------------------------
+   CATÁLOGO DE CAMISETAS
+--------------------------------------------------- */
+.catalogo-container {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.camiseta-card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.camiseta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* ---------------------------------------------------
+   FOOTER
+--------------------------------------------------- */
+.site-footer {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+    background: #0c8f4a;
+    color: white;
+    font-size: 14px;
+}
