@@ -1,37 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Tarjeta de perfil de usuario - Ejercicio HTML y CSS"
-    />
-    <title>Tarjeta de Perfil - Ricardo Maldonado Suarez</title>
-    <link rel="stylesheet" href="rm.css" />
-  </head>
-  <body>
-    <!-- Tarjeta de perfil usando HTML5 semántico -->
-    <article class="tarjeta-perfil">
-      <!-- Imagen de perfil -->
-      <img
-        src="fot.jpeg"
-        alt="Foto de perfil de richi"
-        class="perfil-imagen"
-      />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriente Petrolero | Sitio Oficial</title>
+    <link rel="stylesheet" href="mmm.css">
+</head>
+<body>
 
-      <!-- Información del usuario -->
-      <h1 class="perfil-nombre">Ricardo Maldonado Suarez</h1>
-      <p class="perfil-titulo">Estudiante De Ingenieria en Sistemas</p>
-      <p class="perfil-descripcion">
-        Apasionada por el Futbol hincha del equipo mas grande de santa cruz 
-       ORIENTE PETROLERO
-      </p>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="R.jfif" class="escudo">
+                <span class="logo-text">Oriente Petrolero</span>
+            </a>
 
-      <!-- Botón de acción -->
-      <button class="btn-contactar">Contactar</button>
-    </article>
-  <br>
-    <p> Ricardo Maldonado Suarez </p> 
-  </body>
+            <button class="nav-toggle" id="navToggle">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#camisetas" class="nav-link">Camisetas</a></li>
+                <li><a href="#historia" class="nav-link">Historia</a></li>
+                <li><a href="#contacto" class="nav-link btn-cta">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>¡Pasión Albiverde!</h1>
+            <p>Club Oriente Petrolero • Santa Cruz - Bolivia</p>
+        </div>
+    </section>
+
+    <!-- Galería de Camisetas -->
+    <section class="camisetas-section" id="camisetas">
+        <div class="container">
+            <h2>Camisetas Oficiales</h2>
+
+            <div class="grid-camisetas">
+
+                <div class="card-img">
+                    <img src="cam.jfif" alt="Camiseta Oriente Petrolero 1">
+                </div>
+
+                <div class="card-img">
+                    <img src="cam2.jfif" alt="Camiseta Oriente Petrolero 2">
+                </div>
+
+                <div class="card-img">
+                    <img src="cam3.webp" alt="Camiseta Oriente Petrolero 3">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia -->
+    <section class="content-section" id="historia">
+        <div class="container">
+            <h2>Historia del Club</h2>
+            <p>Fundado en 1955, Oriente Petrolero es uno de los clubes más grandes de Bolivia...</p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="content-section" id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Para más información visita nuestras redes oficiales.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Oriente Petrolero • Sitio de práctica HTML/CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById("navToggle");
+        const menu = document.getElementById("navMenu");
+        toggle.addEventListener("click", () => {
+            menu.classList.toggle("show");
+        });
+    </script>
+
+</body>
 </html>
